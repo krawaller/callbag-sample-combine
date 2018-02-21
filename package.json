@@ -1,0 +1,22 @@
+{
+  "name": "callbag-sample-combine",
+  "version": "1.0.0",
+  "description": "Callbag operator that samples a pullable source and combines it with a listenable",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krawaller/callbag-sample-combine.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "author": "David Waller, adapted from André Staltz original",
+  "license": "MIT",
+  "keywords": [
+    "callbag"
+  ],
+  "devDependencies": {
+    "callbag-mock": "^1.0.0",
+    "tape": "^4.8.0"
+  }
+}
