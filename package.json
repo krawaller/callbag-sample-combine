@@ -1,6 +1,6 @@
 {
   "name": "callbag-sample-combine",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Callbag operator that samples a pullable source and combines it with a listenable",
   "repository": {
     "type": "git",
@@ -16,7 +16,8 @@
     "callbag"
   ],
   "devDependencies": {
-    "callbag-mock": "^1.0.0",
+    "callbag-from-iter": "^1.1.0",
+    "callbag-mock": "^2.2.0",
     "tape": "^4.8.0"
   }
 }
