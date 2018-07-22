@@ -1,6 +1,6 @@
 const test = require('tape');
 const makeMockCallbag = require('callbag-mock');
-const sampleCombine = require('./index');
+const sampleCombine = require('.');
 const fromIter = require('callbag-from-iter');
 
 test('it combines the sampled value with the original emission', t => {
