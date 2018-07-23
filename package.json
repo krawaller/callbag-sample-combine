@@ -6,9 +6,13 @@
     "type": "git",
     "url": "git+https://github.com/krawaller/callbag-sample-combine.git"
   },
-  "main": "index.js",
+  "main": "index.cjs.js",
+  "module": "index.js",
   "scripts": {
-    "test": "tape test.js"
+    "build": "rollup $npm_package_module -o $npm_package_main --f cjs",
+    "pretest": "npm run build",
+    "test": "tape test.js",
+    "prepare": "npm test"
   },
   "author": "David Waller, adapted from André Staltz original",
   "license": "MIT",
@@ -18,6 +22,7 @@
   "devDependencies": {
     "callbag-from-iter": "^1.1.0",
     "callbag-mock": "^2.2.0",
+    "rollup": "^0.63.4",
     "tape": "^4.8.0"
   }
 }

@@ -3,7 +3,7 @@ Slightly modified version of `callbag-sample` by André Staltz
 https://github.com/staltz/callbag-sample/blob/master/index.js
 */
 
-const sample = pullable => listenable => (start, sink) => {
+const sampleCombine = pullable => listenable => (start, sink) => {
   if (start !== 0) return;
   let ltalkback;
   let ptalkback;
@@ -37,4 +37,4 @@ const sample = pullable => listenable => (start, sink) => {
   });
 };
 
-module.exports = sample;
+export default sampleCombine;
